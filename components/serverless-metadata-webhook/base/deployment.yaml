@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: serverless-metadata-webhook
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: serverless-metadata-webhook
+    app.kubernetes.io/part-of: serverless-operator-release-132
+  name: serverless-metadata-webhook
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: serverless-metadata-webhook
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: serverless-metadata-webhook
+    spec:
+      containers:
+      - image: image
+        imagePullPolicy: Always
+        name: container-image
+        resources: {}
+status: {}
