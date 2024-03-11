@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-serving-queue
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-queue@sha256:c3e739a6ac6a806a1b1391f4e20f60f2cc0f2cd90e96385ce8d9474d8540ef9e
         imagePullPolicy: Always
         name: container-image
         resources: {}
