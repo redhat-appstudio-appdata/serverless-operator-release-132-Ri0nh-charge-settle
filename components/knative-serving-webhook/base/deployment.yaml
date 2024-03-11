@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-serving-webhook
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-webhook@sha256:015b0358f003ef57aa87e50e622f5108807ca12f0d0ad118c88fe536fce8ac4d
         imagePullPolicy: Always
         name: container-image
         resources: {}
