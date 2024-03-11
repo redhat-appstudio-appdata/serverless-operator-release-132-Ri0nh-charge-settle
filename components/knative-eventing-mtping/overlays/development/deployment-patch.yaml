@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-eventing-mtping
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-mtping@sha256:b7dc3f626031b0fc854d91b294bcc23af4ed6dba8d580e9e9d7fa11c0ab80169
+        name: container-image
+        resources: {}
+status: {}
