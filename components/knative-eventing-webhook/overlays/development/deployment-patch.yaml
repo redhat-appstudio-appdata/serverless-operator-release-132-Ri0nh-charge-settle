@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-eventing-webhook
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-webhook@sha256:d6e70afe5585cc1599f94eb3824f82f4db49a3fd507568ae2e902fa17617b919
+        name: container-image
+        resources: {}
+status: {}
