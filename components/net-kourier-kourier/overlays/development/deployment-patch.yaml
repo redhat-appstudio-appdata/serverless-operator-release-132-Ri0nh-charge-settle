@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: net-kourier-kourier
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/net-kourier-kourier@sha256:0a88c4811008bf9b8cd62abc8f077593fc46b5ceaf9552e2d12c99c3acfa6c30
+        name: container-image
+        resources: {}
+status: {}
