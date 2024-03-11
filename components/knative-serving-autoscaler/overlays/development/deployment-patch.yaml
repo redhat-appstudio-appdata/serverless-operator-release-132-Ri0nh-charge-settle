@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-serving-autoscaler
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-autoscaler@sha256:41d8a7ff5d750c4f7f041e8ff74814e0911b2410ed3412e18143ddfb8b47660e
+        name: container-image
+        resources: {}
+status: {}
