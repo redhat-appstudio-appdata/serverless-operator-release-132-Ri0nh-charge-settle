@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-eventing-schema
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-schema@sha256:c6e874b9a96803029746a2ddb5cc9deaf27bfbc766d19643ea81a109f5450b1c
         imagePullPolicy: Always
         name: container-image
         resources: {}
