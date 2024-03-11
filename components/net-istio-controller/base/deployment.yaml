@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: net-istio-controller
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/net-istio-controller@sha256:31234c7f85a11ac0e36f2192f7189882cc8b5e524d57468fa6d17d5d178b2126
         imagePullPolicy: Always
         name: container-image
         resources: {}
