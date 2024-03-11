@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: serverless-index
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/serverless-index@sha256:8af8e5635ca3425b2f2e93e81e997ad0c7fc5e9d5773902289e83d39235b8f38
+        name: container-image
+        resources: {}
+status: {}
