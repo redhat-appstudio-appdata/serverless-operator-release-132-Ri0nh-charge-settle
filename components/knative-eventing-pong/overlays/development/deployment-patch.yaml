@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-eventing-pong
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-pong@sha256:85be52fd12f22dd4927ee2e5ccf554a56fcd5238f691754d2c55435d5e9555ff
+        name: container-image
+        resources: {}
+status: {}
