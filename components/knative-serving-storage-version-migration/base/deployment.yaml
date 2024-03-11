@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: knative-serving-storage-version-migration
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: knative-serving-storage-version-migration
+    app.kubernetes.io/part-of: serverless-operator-release-132
+  name: knative-serving-storage-version-migration
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: knative-serving-storage-version-migration
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app.kubernetes.io/instance: knative-serving-storage-version-migration
+    spec:
+      containers:
+      - image: image
+        imagePullPolicy: Always
+        name: container-image
+        resources: {}
+status: {}
