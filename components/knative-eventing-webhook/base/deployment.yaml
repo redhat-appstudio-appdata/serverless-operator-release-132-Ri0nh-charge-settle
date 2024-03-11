@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-eventing-webhook
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-webhook@sha256:d6e70afe5585cc1599f94eb3824f82f4db49a3fd507568ae2e902fa17617b919
         imagePullPolicy: Always
         name: container-image
         resources: {}
