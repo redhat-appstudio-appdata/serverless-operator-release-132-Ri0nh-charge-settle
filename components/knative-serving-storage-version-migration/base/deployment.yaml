@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-serving-storage-version-migration
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-storage-version-migration@sha256:90cba6231c8107caed8dab72f499f4078975629fcfa8fd967a03ccfd3456397e
         imagePullPolicy: Always
         name: container-image
         resources: {}
