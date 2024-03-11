@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: net-kourier-kourier
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/net-kourier-kourier@sha256:0a88c4811008bf9b8cd62abc8f077593fc46b5ceaf9552e2d12c99c3acfa6c30
         imagePullPolicy: Always
         name: container-image
         resources: {}
