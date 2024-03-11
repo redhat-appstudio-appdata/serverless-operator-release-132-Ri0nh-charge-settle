@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-serving-reconciliation-delay
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-reconciliation-delay@sha256:161f5261f4d205049a35db4557b8e71ceb2c8eb5ee3776c9edcf474aaa420510
+        name: container-image
+        resources: {}
+status: {}
