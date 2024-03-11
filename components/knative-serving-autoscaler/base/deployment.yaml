@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-serving-autoscaler
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-autoscaler@sha256:41d8a7ff5d750c4f7f041e8ff74814e0911b2410ed3412e18143ddfb8b47660e
         imagePullPolicy: Always
         name: container-image
         resources: {}
