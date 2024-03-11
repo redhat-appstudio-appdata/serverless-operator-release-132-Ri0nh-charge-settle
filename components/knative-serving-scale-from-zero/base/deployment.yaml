@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-serving-scale-from-zero
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-scale-from-zero@sha256:2bbd9716c48ed1b528c8e5d8585b12d8bc9aa0bb56154b7bcf3fdd805360b493
         imagePullPolicy: Always
         name: container-image
         resources: {}
