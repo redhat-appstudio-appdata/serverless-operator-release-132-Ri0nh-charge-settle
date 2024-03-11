@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-serving-dataplane-probe
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-dataplane-probe@sha256:b843ed3c812dbb4204b0de5dee0f9a5eee1e82dbe36b96bcc43626a82f4b859c
+        name: container-image
+        resources: {}
+status: {}
