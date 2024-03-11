@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-eventing-mtping
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-mtping@sha256:b7dc3f626031b0fc854d91b294bcc23af4ed6dba8d580e9e9d7fa11c0ab80169
         imagePullPolicy: Always
         name: container-image
         resources: {}
