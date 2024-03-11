@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-eventing-mtbroker-ingress
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-mtbroker-ingress@sha256:a1eb8cdd7a3bfd831a264d48018cbcb1e58e0a3643aa56a42c87173e03628740
+        name: container-image
+        resources: {}
+status: {}
