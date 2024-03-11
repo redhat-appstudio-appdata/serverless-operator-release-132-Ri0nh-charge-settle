@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: net-istio-webhook
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/net-istio-webhook@sha256:0d94ec81565f8fddd5bf6477a5c03e88896719b77fae1d7350155cb44b8ec9c1
         imagePullPolicy: Always
         name: container-image
         resources: {}
