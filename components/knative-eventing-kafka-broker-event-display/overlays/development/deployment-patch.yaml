@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-eventing-kafka-broker-event-display
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-kafka-broker-event-display@sha256:8b08c2764f29e138a7dac00a951f2a8329320c62e72ab1da0f0eb9b072d06d96
+        name: container-image
+        resources: {}
+status: {}
