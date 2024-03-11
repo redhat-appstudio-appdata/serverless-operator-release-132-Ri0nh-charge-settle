@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-serving-scale-from-zero
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-scale-from-zero@sha256:2bbd9716c48ed1b528c8e5d8585b12d8bc9aa0bb56154b7bcf3fdd805360b493
+        name: container-image
+        resources: {}
+status: {}
