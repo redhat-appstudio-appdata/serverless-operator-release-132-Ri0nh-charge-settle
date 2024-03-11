@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-eventing-mtchannel-broker
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-mtchannel-broker@sha256:17ea9bae2d94050e4a74d54e08f2d3f5e721f1babd91eaef631565eaf96f0f94
         imagePullPolicy: Always
         name: container-image
         resources: {}
