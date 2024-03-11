@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-serving-storage-version-migration
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-serving-storage-version-migration@sha256:90cba6231c8107caed8dab72f499f4078975629fcfa8fd967a03ccfd3456397e
+        name: container-image
+        resources: {}
+status: {}
