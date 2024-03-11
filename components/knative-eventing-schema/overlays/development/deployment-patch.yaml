@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: knative-eventing-schema
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-schema@sha256:c6e874b9a96803029746a2ddb5cc9deaf27bfbc766d19643ea81a109f5450b1c
+        name: container-image
+        resources: {}
+status: {}
