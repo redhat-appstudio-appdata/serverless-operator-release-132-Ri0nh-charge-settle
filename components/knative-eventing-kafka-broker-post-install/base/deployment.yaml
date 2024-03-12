@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: knative-eventing-kafka-broker-post-install
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/pdipilat-tenant/serverless-operator-release-132/knative-eventing-kafka-broker-post-install@sha256:480943629158c8e28c3886a1d6a8d4dcf7a6195687d504c6a23c3224d8696b5e
         imagePullPolicy: Always
         name: container-image
         resources: {}
